@@ -62,10 +62,10 @@ void machine::call(const variant & func)
 			FKLOG("machine call \n%s\n", paramstr.c_str());
 		}
 		
-#ifdef WIN32
+#if 0
 		// win64不支持嵌入汇编，只能去.asm文件
 		call_native_func(fn->m_buff, ps->m_variant_list, ps->m_variant_list_num);
-#else
+//#else
 		typedef void (*macfunc) ();
 		macfunc f = (macfunc)fn->m_buff;
 		int64_t i = 0;

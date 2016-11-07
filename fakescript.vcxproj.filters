@@ -138,6 +138,9 @@
     <ClInclude Include="src\pointerheap.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\optimizer.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\binary.cpp">
@@ -227,13 +230,11 @@
     <ClCompile Include="src\pointerheap.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\optimizer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="src\win32\nativecall.asm">
-      <Filter>src\win32</Filter>
-    </MASM>
   </ItemGroup>
 </Project>

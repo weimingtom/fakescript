@@ -12,9 +12,16 @@ TARGET = fakeide
 TEMPLATE = app
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+        ../src/*.cpp
+
+# qt 4.8.6
 
 HEADERS  += mainwindow.h
+INCLUDEPATH += ../include ../src/win32  ../src/package ../src
+
+LIBS += -lws2_32
+#LIBS += ../bin/fakescript_d.lib
 
 FORMS    += mainwindow.ui
 
